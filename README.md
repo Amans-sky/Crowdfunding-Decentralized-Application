@@ -1,102 +1,70 @@
+# Getting Started with Create React App
 
-# Decentralized Crowdfunding DApp
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Project Overview
+## Available Scripts
 
-This repository contains a decentralized crowdfunding platform built using Ethereum smart contracts. The application allows users to create and contribute to crowdfunding campaigns with transparency and immutability provided by blockchain technology.
+In the project directory, you can run:
 
-## Features
+### `npm start`
 
-- Connect MetaMask wallet
-- Create a crowdfunding campaign by setting a funding goal and deadline
-- Contribute ETH to active campaigns
-- View campaign progress: goal, total raised, deadline, and time left
-- Popup notification when the campaign goal is reached
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Technology Stack
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-### Blockchain & Smart Contracts
+### `npm test`
 
-- Solidity – Smart contract development
-- Hardhat – Ethereum development environment
-- Ethers.js – Blockchain interaction
-- MetaMask – Wallet integration
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Frontend
+### `npm run build`
 
-- React.js – User interface
-- JavaScript – Application logic
-- CSS – Styling
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Getting Started
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Follow the steps below to set up the project locally.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### 1. Clone the Repository
+### `npm run eject`
 
-```bash
-git clone https://github.com/yourusername/crowdfunding-dapp.git
-cd crowdfunding-dapp
-````
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-### 2. Install Dependencies
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-```bash
-npm install
-```
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-### 3. Compile Smart Contracts
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-```bash
-npx hardhat compile
-```
+## Learn More
 
-### 4. Deploy to Local Hardhat Network
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Start the local Hardhat node:
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-```bash
-npx hardhat node
-```
+### Code Splitting
 
-In a new terminal window, deploy the contract:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-```bash
-npx hardhat run scripts/deploy.js --network localhost
-```
+### Analyzing the Bundle Size
 
-### 5. Start the Frontend
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-```bash
-npm start
-```
+### Making a Progressive Web App
 
-## Smart Contract Overview
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-The smart contract includes the following key functions:
+### Advanced Configuration
 
-* `createCampaign(uint _goalAmount, uint _durationInMinutes)`
-  Create a new crowdfunding campaign.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-* `contribute()`
-  Contribute ETH to an active campaign.
+### Deployment
 
-* `withdrawFunds()`
-  Withdraw raised funds after campaign success (only by campaign owner).
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-* `getTimeLeft()`
-  Returns the remaining time for a campaign.
+### `npm run build` fails to minify
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more information.
-
-## Author
-
-**Aman N Shah**
-
-For any inquiries or suggestions, feel free to connect via LinkedIn or raise an issue in this repository.
-
-```
-
-
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
